@@ -1,5 +1,5 @@
 {% set name = "aif360" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9c4b44742984c741e6dab1770afc65480b1fcd8e04d33549c346b03674b6b8dd
+  sha256: 79619addfbd4bc19d58c19b34f64496852f8a9a2bdd7c77800cf3f3a91e2a33e
 
 build:
   number: 0
@@ -37,7 +37,7 @@ test:
 
 about:
   home: https://github.com/IBM/AIF360
-  summary:  A comprehensive set of fairness metrics for datasets and machine learning models, explanations for these metrics, and algorithms to mitigate bias in datasets and models. 
+  summary: A comprehensive set of fairness metrics for datasets and machine learning models, explanations for these metrics, and algorithms to mitigate bias in datasets and models.
   description: |
     The AI Fairness 360 toolkit is an extensible open-source library containing techniques developed by the research 
     community to help detect and mitigate bias in machine learning models throughout the AI application lifecycle. 
