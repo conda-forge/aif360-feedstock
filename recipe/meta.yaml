@@ -11,12 +11,12 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - matplotlib
+    - matplotlib-base
     - numpy >=1.16
     - pandas >=0.24.0
     - pip
@@ -25,7 +25,7 @@ requirements:
     - scipy >=1.2.0,<1.6.0
     - tempeh
   run:
-    - matplotlib
+    - matplotlib-base
     - numpy >=1.16
     - pandas >=0.24.0
     - python >=3.6,<3.9
