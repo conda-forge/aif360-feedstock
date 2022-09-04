@@ -1,18 +1,18 @@
 {% set name = "aif360" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 79619addfbd4bc19d58c19b34f64496852f8a9a2bdd7c77800cf3f3a91e2a33e
+  sha256: a03b3a61fa6a912ede3cc75724a95b4ab06695e500f957527da0dfc40d664f5d
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -42,7 +42,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: "IBM AI Fairness 360"
+  summary: IBM AI Fairness 360
   doc_url: https://aif360.mybluemix.net/
   dev_url: https://github.com/Trusted-AI/AIF360
 
