@@ -1,11 +1,11 @@
-About aif360
-============
+About aif360-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aif360-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Trusted-AI/AIF360
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aif360-feedstock/blob/main/LICENSE.txt)
 
 Summary: IBM AI Fairness 360
 
