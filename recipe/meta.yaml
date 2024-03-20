@@ -1,5 +1,5 @@
 {% set name = "aif360" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,31 +7,24 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a03b3a61fa6a912ede3cc75724a95b4ab06695e500f957527da0dfc40d664f5d
+  sha256: c0cc9487bae8db2407b4967a2b59904a0417948fca62f602c25f8320c0287440
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - matplotlib-base
-    - numpy >=1.16
-    - pandas >=0.24.0
+    - python >=3.7
     - pip
-    - python >=3.7
-    - scikit-learn >=0.22.1
-    - scipy >=1.2.0,<1.6.0
-    - tempeh
   run:
-    - matplotlib-base
-    - numpy >=1.16
-    - pandas >=0.24.0
     - python >=3.7
-    - scikit-learn >=0.22.1
-    - scipy >=1.2.0,<1.6.0
-    - tempeh
+    - numpy >=1.16
+    - scipy >=1.2.0
+    - pandas >=0.24.0
+    - scikit-learn >=1.0
+    - matplotlib-base
 
 test:
   imports:
@@ -49,3 +42,4 @@ about:
 extra:
   recipe-maintainers:
     - philip-khor
+    - primozgodec
