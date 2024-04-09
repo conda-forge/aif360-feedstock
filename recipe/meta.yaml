@@ -1,5 +1,5 @@
 {% set name = "aif360" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c0cc9487bae8db2407b4967a2b59904a0417948fca62f602c25f8320c0287440
+  sha256: 635afc0bbe785e08fa242eee5e5080238193d0583bc0f5006a132050d4fb77f2
 
 build:
   noarch: python
